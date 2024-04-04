@@ -4,7 +4,7 @@ import { FileUploadController } from './file-upload.controller';
 import { MulterModule } from '@nestjs/platform-express';
 
 @Module({
-  imports: [MulterModule.register({ dest: './dist' })],
+  imports: [MulterModule.register({ dest: './upload' })],
   controllers: [FileUploadController],
   providers: [FileUploadService],
 })
